@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOM - 10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="app.css" />
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="fname" id="fname" placeholder="First Name">
+                    </td>
+                    <td>
+                        <input type="text" name="lname" id="lname" placeholder="Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="Male">Male</td>
+                    <td>
+                        <input type="radio" name="gender" id="female" value="Female">Female</td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td>
+                        <select name="state" id="state">
+                            <option value="NY">NY</option>
+                            <option value="NJ">NJ</option>
+                            <option value="PA">PA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="showDetails()">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <button id="edit" value="edit" onclick="edit()">EDIT</button>
+            <p id="dataFname"> First Name: </p>
+            <p id="dataLname">Last Name: </p>
+            <p id="dataState">State: </p>
+            <p id="dataGender">Gender: </p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
